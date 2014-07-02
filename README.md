@@ -8,11 +8,14 @@ configuration in celery 3.1.x
 A chord with a chain as its callback fails spectacularly.
 
 Expected use:
-* Run ```chord_chain worker --config=canvas_kaboom.config```
-* Run ```chord_chain shell --config=canvas_kaboom.config```
+* Run ```canvas_kaboom worker --config=canvas_kaboom.config```
+* Run ```canvas_kaboom shell --config=canvas_kaboom.config```
+* In the shell:
 ```python
-from canvas_kaboom.chord_chain import works, fails
-works()
-fails()
+from canvas_kaboom.chord_chain import cc_works, cc_fails
+from canvas_kaboom.group_upgrades import gu_works
+cc_works()
+gu_works()
+cc_fails()
 ```
 * Observe output in worker

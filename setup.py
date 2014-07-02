@@ -25,6 +25,6 @@ setup(name='canvas_kaboom',
       ],
       entry_points="""
       [console_scripts]
-      chord_chain=canvas_kaboom.chord_chain:main
+      canvas_kaboom=canvas_kaboom:main
       """,
       )
