@@ -19,7 +19,7 @@ def cc_print_result(total):
     return total
 
 
-def fails():
+def cc_fails():
     return (
         chord([
             cc_produce_n.s(n + 1) for n in range(10)
@@ -30,7 +30,7 @@ def fails():
     )
 
 
-def works():
+def cc_works():
     return (
         chord([
             cc_produce_n.s(n + 1) for n in range(10)
