@@ -5,7 +5,8 @@ configuration in celery 3.1.x
 
 ## chord_chain
 
-A chord with a chain as its callback fails spectacularly.
+A chord with a chain as its callback fails spectacularly, but a 
+group connected to a chain works just fine.
 
 Expected use:
 * Run ```canvas_kaboom worker --config=canvas_kaboom.config```
